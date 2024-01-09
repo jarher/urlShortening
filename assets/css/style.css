@@ -1,0 +1,17 @@
+@import url("./colors.css");
+@import url("./header.css");
+@import url("./getStartet.css");
+@import url("./shortenUrl.css");
+@import url("./advanceStatistics.css");
+@import url("./boost.css");
+@import url("./footer.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
