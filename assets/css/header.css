@@ -35,7 +35,7 @@ header {
   width: 100%;
   padding: 3%;
   text-align: center;
-  transition: all 0.2s ease-in ;
+  transition: all 0.2s ease-in;
 }
 .main-navbar li:hover {
   background-color: var(--Cyan);
@@ -50,4 +50,7 @@ header {
 .main-navbar hr {
   width: 100%;
   border: 0.5px solid var(--Grayish-Violet);
+}
+.navbar-collapse {
+  display: none;
 }
