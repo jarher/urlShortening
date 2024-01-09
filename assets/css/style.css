@@ -6,12 +6,25 @@
 @import url("./boost.css");
 @import url("./footer.css");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url("../fonts/Poppins-Regular.ttf");
 }
-html{
-    scroll-behavior: smooth;
-    font-size: 18px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+body {
+  position: relative;
+  font-family: "Poppins";
+}
+img {
+  width: 100%;
+  height: auto;
 }
