@@ -4,6 +4,7 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 999;
 }
 .main-nav {
   display: flex;
@@ -51,6 +52,4 @@ header {
   width: 100%;
   border: 0.5px solid var(--Grayish-Violet);
 }
-.navbar-collapse {
-  display: none;
-}
+

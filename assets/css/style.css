@@ -34,3 +34,6 @@ main {
 button, form input{
   border: none;
 }
+.navbar-collapse{
+  display: none;
+}

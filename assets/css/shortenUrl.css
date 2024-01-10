@@ -1,0 +1,54 @@
+.shorten-url-section .form-container {
+  min-height: 20vh;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--Dark-Violet);
+  border-radius: 10px;
+}
+.shorten-url-section .form-container form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  backdrop-filter: opacity(0.5);
+}
+.shorten-url-section .form-container img {
+  position: absolute;
+  left: 50px;
+  top: -50px;
+  z-index: -1;
+}
+.shorten-url-section #url-string,
+.shorten-url-section form input[type="submit"] {
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4%;
+}
+.shorten-url-section #url-string {
+  border: none;
+  outline: none;
+  transition: outline 0.2s ease-in;
+}
+.shorten-url-section .form-container .url-error {
+  font-size: 0.7rem;
+  color: var(--Red);
+  margin-top: 8px;
+  display: none;
+}
+.shorten-url-section .form-container #url-string:invalid {
+  outline: 3px solid var(--Red);
+}
+.shorten-url-section form input[type="submit"] {
+  text-align: center;
+  background-color: var(--Cyan);
+  color: white;
+  display: block;
+  font-weight: 700;
+  margin-top: 13px;
+}
+.show-error {
+  display: block!important;
+}
