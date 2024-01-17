@@ -1,5 +1,5 @@
 header {
-  height: 70px;
+  height: 80px;
   padding: 30px 20px;
   position: sticky;
   top: 0;
@@ -12,7 +12,7 @@ header {
   align-items: center;
 }
 .logo-container {
-  width: 100px;
+  /* width: 100px; */
 }
 #menu-icon {
   font-size: 1.875rem;

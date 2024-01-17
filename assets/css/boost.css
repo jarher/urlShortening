@@ -1,0 +1,33 @@
+.boost-section {
+  position: relative;
+  background-color: var(--Dark-Violet);
+  height: 230px;
+}
+.boost-text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.boost-text-container h3 {
+  color: var(--Pale-gray);
+}
+.boost-text-container button {
+  background-color: var(--Cyan);
+  color: var(--Pale-gray);
+  font-size: 0.9rem;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.boost-section img {
+  height: 100%;
+}
