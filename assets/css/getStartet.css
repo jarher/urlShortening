@@ -29,4 +29,77 @@
   border-radius: 30px;
   font-weight: 700;
   font-size: 1rem;
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
+}
+.get-started-section .text-content button:hover {
+  background-color: var(--light-cyan);
+}
+
+@media (min-width: 600px) {
+  .get-started-section {
+    display: flex;
+    gap: 20px;
+  }
+  .get-started-section .img-container {
+    order: 2;
+    margin-right: -80px;
+    flex: 1;
+  }
+  .get-started-section .text-content {
+    order: 1;
+    margin-top: 0;
+    flex: 1;
+  }
+  .get-started-section .text-content h1,
+  .get-started-section .text-content p {
+    text-align: left;
+  }
+  .get-started-section .text-content button {
+    margin: 1% 0;
+  }
+  .get-started-section .text-content h1 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  .get-started-section .text-content p {
+    font-size: 0.8rem;
+  }
+  .get-started-section .text-content button {
+    padding: 3%;
+    margin: 1.5% 0;
+    width: 42%;
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .get-started-section {
+    padding: 0 160px;
+    margin-top: 60px;
+    height: 480px;
+  }
+  .get-started-section .img-container {
+    margin-right: -260px;
+  }
+  .get-started-section .text-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .get-started-section .text-content h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+
+  .get-started-section .text-content p {
+    font-size: 1.4rem;
+  }
+
+  .get-started-section .text-content button {
+    width: 200px;
+    font-size: 1rem;
+    margin: 0.8% 0;
+  }
 }

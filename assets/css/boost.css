@@ -29,7 +29,23 @@
   border-radius: 30px;
   font-weight: 700;
   width: 195px;
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
+}
+.boost-text-container button:hover {
+  background-color: var(--light-cyan);
 }
 .boost-section img {
   height: 100%;
+}
+@media (min-width: 1024px) {
+  .boost-section {
+    height: 260px;
+  }
+  .boost-text-container {
+    height: 140px;
+  }
+  .boost-text-container h3 {
+    font-size: 2.15rem;
+  }
 }

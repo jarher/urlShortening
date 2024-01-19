@@ -23,6 +23,11 @@ footer .logo-container path {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  transition: color 0.2s ease-in;
+  cursor: pointer;
+}
+.main-footer-menu li:hover {
+  color: var(--Cyan);
 }
 .footer-menu-title {
   color: white;
@@ -36,7 +41,7 @@ footer .logo-container path {
   gap: 10px;
 }
 .footer-submenu li {
-  color: var( --Gray);
+  color: var(--Gray);
   font-size: 0.85rem;
 }
 footer .social-media-menu {
@@ -49,4 +54,61 @@ footer .social-media-menu {
 }
 footer .social-media-menu li {
   width: 23px;
+  cursor: pointer;
+}
+footer .social-media-menu li a svg path {
+  transition: all 0.2s ease-in;
+}
+footer .social-media-menu li a svg:hover path {
+  fill: var(--Cyan);
+}
+@media (min-width: 600px) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .logo-container {
+    width: 100%;
+    text-align: left;
+  }
+  .main-footer-menu {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-footer-menu li {
+    flex: 1;
+  }
+  footer .social-media-menu {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    padding: 60px 160px;
+    height: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  footer .logo-container {
+    width: 33%;
+  }
+  footer .main-footer-menu {
+    width: 46%;
+    margin-top: 0;
+  }
+  footer .main-footer-menu li {
+    align-items: flex-start;
+  }
+  footer .social-media-menu {
+    width: auto;
+    margin-top: 0;
+    width: 18%;
+    justify-content: space-around;
+  }
+  .footer-submenu li {
+    align-items: flex-start;
+  }
 }

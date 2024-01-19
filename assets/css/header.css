@@ -28,8 +28,19 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 15px;
-  gap: 20px;
+  padding: 40px 15px;
+  gap: 25px;
+}
+.main-navbar-links,
+.main-navbar-authenticate {
+  display: inherit;
+  flex-direction: inherit;
+}
+.main-navbar-links {
+  gap: inherit;
+}
+.main-navbar-authenticate {
+  gap: 15px;
 }
 .main-navbar li {
   width: 100%;
@@ -37,9 +48,14 @@ header {
   text-align: center;
   transition: all 0.2s ease-in;
 }
-.main-navbar li:hover {
+.sign-up {
   background-color: var(--Cyan);
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
 }
 .main-navbar li a {
   text-decoration: none;
@@ -49,6 +65,78 @@ header {
 }
 .main-navbar hr {
   width: 100%;
-  border: 0.5px solid var(--Grayish-Violet);
+  border: 0.5px solid hsl(257deg 5.14% 35.1%);
 }
-
+.main-navbar-authenticate {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  header {
+    padding: 20px;
+  }
+  .main-navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-navbar hr {
+    display: none;
+  }
+  .main-navbar-authenticate {
+    width: 35%;
+  }
+  .main-navbar-links {
+    width: 45%;
+  }
+  .main-navbar li {
+    padding: auto;
+  }
+  .main-navbar li a {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 0 160px;
+    position: relative;
+  }
+  .main-nav {
+    height: 120px;
+  }
+  .logo-container {
+    flex: 1;
+  }
+  #menu-icon {
+    display: none;
+  }
+  .main-navbar {
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    padding: 0;
+    flex-direction: row;
+    flex: 10;
+    justify-content: space-between;
+  }
+  .main-navbar-links {
+    display: flex;
+    width: 355px;
+  }
+  .main-navbar li a {
+    color: var(--Grayish-Violet);
+    transition: color 0.2s ease-in;
+  }
+  .main-navbar li a:hover{
+    color: var(--Very-Dark-Violet);
+  }
+  .main-navbar-authenticate {
+    display: flex;
+    width: 295px;
+  }
+  .main-navbar-authenticate .sign-up a{
+    color:white;
+  }
+  .main-navbar-authenticate .sign-up:hover{
+    background-color: var(--light-cyan);
+  }
+  
+}

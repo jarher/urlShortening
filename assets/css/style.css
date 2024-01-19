@@ -36,3 +36,8 @@ button, form input{
 .navbar-collapse{
   display: none;
 }
+@media (min-width:1024px) {
+  .navbar-collapse{
+    display: flex;
+  }
+}

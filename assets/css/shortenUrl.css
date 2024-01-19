@@ -21,7 +21,6 @@
   flex-wrap: wrap;
   padding: 25px;
   backdrop-filter: opacity(0.5);
-  
 }
 .shorten-url-section .form-container img {
   position: absolute;
@@ -104,6 +103,113 @@
   width: 100%;
   font-weight: 500;
 }
-.copied-url-button{
+.shorten-url-section form input[type="submit"],
+.shorten-url-section .copy-url-button {
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
+}
+.shorten-url-section form input[type="submit"]:hover,
+.shorten-url-section .copy-url-button:hover {
+  background-color: var(--light-cyan);
+}
+.copied-url-button {
   background-color: var(--Dark-Violet);
+}
+@media (min-width: 600px) {
+  .shorten-url-section {
+    margin-top: 55px;
+    gap: 12px;
+  }
+  .shorten-url-section .form-container {
+    width: 92%;
+    margin-top: -50px;
+    min-height: auto;
+  }
+  .shorten-url-section .form-container form {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .shorten-url-section #url-string,
+  .shorten-url-section form input[type="submit"] {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .shorten-url-section .form-container #url-string {
+    flex: 4;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .shorten-url-section form input[type="submit"] {
+    flex: 1;
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+  .url-shorten-content {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    gap: 0;
+  }
+  .url-shorten-content div:nth-child(2) {
+    border: none;
+    flex-direction: row;
+    align-items: center;
+    width: 45%;
+  }
+  .url-shorten-content .copy-url-button {
+    padding: 1%;
+  }
+}
+@media (min-width: 1024px) {
+  .shorten-url-section {
+    margin-top: 140px;
+    gap: 20px;
+  }
+  .shorten-url-section .form-container {
+    width: auto;
+    margin: -90px 160px 0 160px;
+  }
+  .shorten-url-section .form-container form {
+    padding: 50px;
+    gap: 30px;
+  }
+  .shorten-url-section #url-string,
+  .shorten-url-section form input[type="submit"] {
+    border-radius: 10px;
+  }
+  .shorten-url-section .form-container #url-string {
+    padding: 2% 3%;
+    font-size: 1.2rem;
+  }
+  .shorten-url-section form input[type="submit"] {
+    font-size: 1.2rem;
+  }
+
+  .shorten-url-section .form-container img {
+    left: 0px;
+    top: 0px;
+  }
+  .url-shorten-content {
+    margin: 0 160px 0 160px;
+    padding: 0 25px;
+    width: auto;
+  }
+  .url-shorten-content div {
+    display: flex;
+    align-items: center;
+  }
+  .url-shorten-content div:nth-child(2) {
+    width: auto;
+    gap: 20px;
+  }
+  .url-shorten-content .original-url,
+  .url-shorten-content .shorten-url {
+    font-size: 1.1rem;
+  }
+  .url-shorten-content .copy-url-button {
+    font-size: 0.9rem;
+    padding: 3% 10%;
+    margin-right: 50px;
+  }
 }
