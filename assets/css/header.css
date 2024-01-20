@@ -60,7 +60,7 @@ header {
 .main-navbar li a {
   text-decoration: none;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "Poppins";
 }
 .main-navbar hr {
@@ -72,7 +72,7 @@ header {
 }
 @media (min-width: 600px) {
   header {
-    padding: 20px;
+    padding: 20px 50px;
   }
   .main-navbar {
     flex-direction: row;
@@ -119,24 +119,24 @@ header {
   }
   .main-navbar-links {
     display: flex;
-    width: 355px;
+    width: 275px;
+    margin-left: 40px;
   }
   .main-navbar li a {
     color: var(--Grayish-Violet);
     transition: color 0.2s ease-in;
   }
-  .main-navbar li a:hover{
+  .main-navbar li a:hover {
     color: var(--Very-Dark-Violet);
   }
   .main-navbar-authenticate {
     display: flex;
-    width: 295px;
+    width: 245px;
   }
-  .main-navbar-authenticate .sign-up a{
-    color:white;
+  .main-navbar-authenticate .sign-up a {
+    color: white;
   }
-  .main-navbar-authenticate .sign-up:hover{
+  .main-navbar-authenticate .sign-up:hover {
     background-color: var(--light-cyan);
   }
-  
 }

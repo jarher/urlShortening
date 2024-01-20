@@ -37,7 +37,7 @@
   align-items: center;
   background-color: white;
   padding: 25px;
-  border-radius: 3px;
+  border-radius: 5px;
   gap: 25px;
   height: 310px;
 }
@@ -52,6 +52,7 @@
 .card-title {
   font-weight: 700;
   font-size: 1.2rem;
+  margin-top: 25px;
 }
 @media (min-width: 600px) {
   .advance-statistics-section {
@@ -80,10 +81,10 @@
   }
   .card-container {
     flex-direction: row;
-    height: 360px;
-    align-items: normal;
-    margin-left: 135px;
-    margin-right: 135px;
+    height: auto;
+    align-items: flex-start;
+    margin-left: 165px;
+    margin-right: 165px;
     gap: 30px;
   }
   .card-image-container {
@@ -98,6 +99,7 @@
   .card {
     align-items: flex-start;
     padding: 30px;
+    gap: 20px;
   }
   .card-title {
     margin-top: 10px;
@@ -105,23 +107,17 @@
   .card p {
     text-align: left;
   }
-  .card:nth-child(2) {
-    align-self: flex-start;
-  }
+
   .card:nth-child(3) {
-    align-self: center;
+    margin-top: 40px;
   }
   .card:nth-child(4) {
-    align-self: flex-end;
+    margin-top: 80px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
   .card-container {
     margin-left: 100px;
     margin-right: 100px;
-    height: 475px;
-  }
-  .card {
-    align-items: flex-start;
   }
 }
