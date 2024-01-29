@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  <!-- BEGIN SHAREAHOLIC CODE -->
+  <link rel="preload" href="https://cdn.shareaholic.net/assets/pub/shareaholic.js" as="script" />
+  <meta name="shareaholic:site_id" content="ad3dc47e0e903255085a19092674f2b1" />
+  <script data-cfasync="false" async src="https://cdn.shareaholic.net/assets/pub/shareaholic.js"></script>
+  <!-- END SHAREAHOLIC CODE -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
@@ -54,7 +58,7 @@
     <section class="shorten-url-section">
       <div class="form-container">
         <form>
-          <input type="url" name="url-string" id="url-string" placeholder="Shorten a link here...">
+          <input type="url" name="urlString" id="urlString" placeholder="Shorten a link here...">
           <span class="url-error">Please add a link</span>
           <input type="submit" value="Shorten It!">
           <img srcset="./assets/images/bg-shorten-mobile.svg 237w, ./assets/images/bg-shorten-desktop.svg 1110w"
@@ -62,7 +66,7 @@
             alt="shorten background image">
         </form>
       </div>
-      <div class="url-shorten-content">
+      <!-- <div class="url-shorten-content">
         <div>
           <span class="original-url">https://www.frontendmentor.io</span>
         </div>
@@ -79,7 +83,7 @@
           <span class="shorten-url">https://rel.ink/k4lKyk</span>
           <button class="copy-url-button">copy</button>
         </div>
-      </div>
+      </div> -->
     </section>
     <section class="advance-statistics-section">
       <h2>Advanced Statistics</h2>

@@ -30,6 +30,11 @@ header {
   align-items: center;
   padding: 40px 15px;
   gap: 25px;
+  transform: perspective(500px) rotateY(-90deg);
+  transition: all 0.3s ease-in;
+}
+.rotateIn-navbar {
+  transform: rotateZ(0deg);
 }
 .main-navbar-links,
 .main-navbar-authenticate {
@@ -70,6 +75,7 @@ header {
 .main-navbar-authenticate {
   width: 100%;
 }
+
 @media (min-width: 600px) {
   header {
     padding: 20px 50px;
@@ -96,8 +102,9 @@ header {
 }
 @media (min-width: 1024px) {
   header {
-    padding: 0 160px;
     position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .main-nav {
     height: 120px;
@@ -138,5 +145,17 @@ header {
   }
   .main-navbar-authenticate .sign-up:hover {
     background-color: var(--light-cyan);
+  }
+}
+@media (min-width: 1024px) and (max-width: 1150px) {
+  header {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (min-width: 1151px) {
+  header {
+    padding-left: 160px;
+    padding-right: 160px;
   }
 }
