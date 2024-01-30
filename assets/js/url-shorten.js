@@ -33,10 +33,18 @@ const getUrlShorten = async (url) => {
   }
 };
 export const urlValidity = (target) => {
-  if (target.validity.valid) {
+  if (
+    target.validity.valid &&
+    /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/.test(
+      target.value
+    )
+  ) {
     urlError.classList.remove("show-error");
+    document.querySelector("#submit").disabled = false;
   } else {
     urlError.classList.add("show-error");
+    target.invalid = true;
+    document.querySelector("#submit").disabled = true;
   }
 };
 export const urlShorten = async (originalUrl) => {

@@ -42,7 +42,7 @@
   transition: outline 0.2s ease-in;
   font-size: 0.85rem;
 }
-.form-container .url-error {
+.url-error {
   font-size: 0.7rem;
   color: var(--Red);
   margin-top: 8px;
@@ -64,6 +64,7 @@
 }
 .show-error {
   display: block !important;
+  width: 100%;
 }
 .url-shorten-content {
   display: flex;
@@ -195,7 +196,7 @@
   .form-container form input[type="submit"] {
     border-radius: 10px;
   }
-  .form-container #urlString {
+  #urlString {
     padding: 2% 3%;
     font-size: 1.2rem;
     flex: 10;
@@ -225,6 +226,10 @@
   .original-url,
   .shorten-url {
     font-size: 1.1rem;
+  }
+  .url-error {
+    position: absolute;
+    bottom: 20px;
   }
   .copy-url-button,
   .copied-url-button {
