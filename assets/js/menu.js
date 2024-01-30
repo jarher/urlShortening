@@ -7,7 +7,7 @@ const navbarIn = () => {
   setTimeout(() => mainNavbar.classList.add("rotateIn-navbar"), 200);
 };
 
-const navbarOut = () => {
+export const navbarOut = () => {
   mainNavbar.classList.remove("rotateIn-navbar");
   setTimeout(() => mainNavbar.classList.add("navbar-collapse"), 300);
 };

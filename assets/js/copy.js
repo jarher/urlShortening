@@ -1,20 +1,13 @@
-export const copyUrl = (index) => {
+export const copyUrl = (target, index) => {
   const shorten_url_arrays = Array.from(
     document.querySelectorAll(".shorten-url")
   );
 
   const shorten_url = shorten_url_arrays.filter(
-    (shorten_url) => shorten_url.dataset.index === index
+    (element) => element.dataset.index === index
   );
-
-  const source = document.querySelector("div.source");
-
-  source.addEventListener("copy", (event) => {
-    const selection = document.getSelection();
-    event.clipboardData.setData(
-      "text/plain",
-      selection.toString().toUpperCase()
-    );
-    event.preventDefault();
-  });
+  navigator.clipboard.writeText(shorten_url[0].innerText);
+  target.classList.remove("copy-url-button");
+  target.classList.add("copied-url-button");
+  target.innerText = "Copied!";
 };

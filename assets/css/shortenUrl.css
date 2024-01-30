@@ -97,14 +97,17 @@
 .shorten-url {
   color: var(--Cyan);
 }
-.copy-url-button {
+.copy-url-button,
+.copied-url-button {
   display: block;
-  background-color: var(--Cyan);
   padding: 3%;
   color: white;
   border-radius: 4px;
   width: 100%;
   font-weight: 500;
+}
+.copy-url-button {
+  background-color: var(--Cyan);
 }
 .form-container form input[type="submit"],
 .copy-url-button {
@@ -166,7 +169,8 @@
   .shorten-url {
     word-wrap: break-word;
   }
-  .copy-url-button {
+  .copy-url-button,
+  .copied-url-button {
     padding: 1%;
   }
 }
@@ -216,16 +220,17 @@
   }
   .url-shorten-content div:nth-child(2) {
     width: auto;
-    gap: 20px;
+    gap: 5px;
   }
   .original-url,
   .shorten-url {
     font-size: 1.1rem;
   }
-  .copy-url-button {
+  .copy-url-button,
+  .copied-url-button {
     font-size: 0.9rem;
-    padding: 3% 10%;
-    margin-right: 50px;
+    padding: 10px;
+    width: 130px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1150px) {

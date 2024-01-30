@@ -1,5 +1,5 @@
 import { copyUrl } from "./copy.js";
-import { toggleNavbarClasses } from "./menu.js";
+import { navbarOut, toggleNavbarClasses } from "./menu.js";
 import { urlShorten, urlValidity } from "./url-shorten.js";
 
 export const events = () => {
@@ -9,8 +9,14 @@ export const events = () => {
     if (e.target.id === "menu-icon") {
       toggleNavbarClasses();
     }
+    if (e.target.id === "urlString") {
+      e.target.value = "";
+    }
     if (e.target.className === "copy-url-button") {
-      copyUrl(e.target.dataset.index);
+      copyUrl(e.target, e.target.dataset.index);
+    }
+    if (e.target.id !== "menu-icon") {
+      navbarOut();
     }
   });
 
@@ -25,7 +31,5 @@ export const events = () => {
     console.log(await urlShorten(e.target.urlString.value));
   });
 
-  d.addEventListener("copy", (e) => {
-    
-  });
+  d.addEventListener("copy", (e) => {});
 };
