@@ -49,8 +49,8 @@
   display: none;
   font-style: italic;
 }
-#urlString:invalid {
-  outline: 3px solid var(--Red);
+.invalidUrlString {
+  outline: 3px solid var(--Red)!important;
   color: var(--Red);
 }
 .form-container form input[type="submit"] {

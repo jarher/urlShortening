@@ -34,17 +34,18 @@ const getUrlShorten = async (url) => {
 };
 export const urlValidity = (target) => {
   if (
-    target.validity.valid &&
     /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/.test(
       target.value
     )
   ) {
     urlError.classList.remove("show-error");
     document.querySelector("#submit").disabled = false;
+    target.classList.remove("invalidUrlString");
   } else {
     urlError.classList.add("show-error");
     target.invalid = true;
     document.querySelector("#submit").disabled = true;
+    target.classList.add("invalidUrlString");
   }
 };
 export const urlShorten = async (originalUrl) => {
