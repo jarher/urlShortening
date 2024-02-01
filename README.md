@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
+- Solution URL: [https://www.frontendmentor.io/solutions/url-shortening-api-landingpage-html-css-javascript-BKb8gkbUlb]
 - Live Site URL: [https://jarher.github.io/urlShortening/]
 
 ## My process
