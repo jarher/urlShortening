@@ -41,10 +41,17 @@ header {
   display: inherit;
   flex-direction: inherit;
 }
+.main-navbar-links,
+.main-navbar-authenticate {
+  list-style: none;
+}
 .main-navbar-links {
   gap: inherit;
+  width: 90%;
 }
 .main-navbar-authenticate {
+  display: flex;
+  flex-direction: column;
   gap: 15px;
 }
 .main-navbar li {
@@ -84,17 +91,25 @@ header {
     flex-direction: row;
     justify-content: space-between;
   }
+  .main-navbar-links {
+    width: 100%;
+  }
   .main-navbar hr {
     display: none;
   }
+  .main-navbar-links li:nth-child(4) {
+    width: 0;
+  }
+  .main-navbar-authenticate-wrapper {
+    width: 300px;
+  }
   .main-navbar-authenticate {
-    width: 35%;
+    flex-direction: row;
+    width: 170px;
   }
-  .main-navbar-links {
-    width: 45%;
-  }
+
   .main-navbar li {
-    padding: auto;
+    padding: 0;
   }
   .main-navbar li a {
     font-size: 0.8rem;
@@ -125,13 +140,19 @@ header {
     justify-content: space-between;
     transform: perspective(500px) rotateY(0deg);
   }
-  .navbar-collapse{
+  .navbar-collapse {
     display: block;
   }
   .main-navbar-links {
     display: flex;
-    width: 275px;
-    margin-left: 40px;
+    width: 100%;
+    margin-left: 35px;
+    gap: 30px;
+  }
+  
+  .main-navbar li {
+    padding: 0;
+    width: 85px;
   }
   .main-navbar li a {
     color: var(--Grayish-Violet);
@@ -140,12 +161,22 @@ header {
   .main-navbar li a:hover {
     color: var(--Very-Dark-Violet);
   }
-  .main-navbar-authenticate {
+  .main-navbar-authenticate-wrapper {
+    width: 100% !important;
     display: flex;
-    width: 245px;
+    justify-content: flex-end;
+  }
+  .main-navbar-authenticate {
+    width: 200px !important;
+    flex-direction: row;
+  }
+  .main-navbar-authenticate .sign-up {
+    padding: 0;
+    width: 100px;
   }
   .main-navbar-authenticate .sign-up a {
     color: white;
+    padding: 7px 15px;
   }
   .main-navbar-authenticate .sign-up:hover {
     background-color: var(--light-cyan);

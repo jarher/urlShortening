@@ -86,7 +86,8 @@ footer .social-media-menu li a svg:hover path {
 }
 @media (min-width: 1024px) {
   footer {
-    padding: 60px 160px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     height: 300px;
     flex-direction: column;
     align-items: flex-start;
@@ -110,5 +111,17 @@ footer .social-media-menu li a svg:hover path {
   }
   .footer-submenu li {
     align-items: flex-start;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1150px) {
+  footer {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (min-width: 1151px) {
+  footer {
+    padding-left: 160px;
+    padding-right: 160px;
   }
 }
